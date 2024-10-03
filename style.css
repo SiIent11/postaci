@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 40px;
+}
+body{
+    background-color: lightskyblue;
+}
+#container{
+    width: 50vw;
+    height: 50vh;
+    margin: auto auto;
+    text-align: center;
+}
+div{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: blueviolet;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 20vw;
+    height: 10vh;
+    color: yellow;
+    font-size: 30px;
+}
