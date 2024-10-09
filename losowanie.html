@@ -16,5 +16,24 @@
             <p><a href="dodawanie.html">Dodaj</a> nową postać.</p>
         </div>
     </div>
+    <script>
+        function log(jason){
+            console.log(jason);
+            
+            var keys = Object.keys(jason);
+            console.log(keys);
+            var uniwersum = keys[ keys.length * Math.random() << 0];
+            var postac = jason[uniwersum][Math.floor(Math.random()*jason[uniwersum].length)];
+
+            console.log(postac);
+            console.log(uniwersum);
+        }
+        function branie(response){
+            return response.json()
+        }
+        function losowanie(){
+            fetch("postaci.json").then(branie).then(log)
+        }
+    </script>
 </body>
 </html>
